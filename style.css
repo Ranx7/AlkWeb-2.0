@@ -1,0 +1,26 @@
+.navbar-brand-custom {
+    margin: 0px 0px 0px;
+}
+.navbar-bg-custom {
+    background: linear-gradient(to right, yellow, rgb(155, 155, 83));
+}
+.home-bg {
+    background: url("home-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.fs-0 {
+    font-size: calc(1.7rem + 1.7vw) !important;
+}
+.card-custom {
+    background-color: rgb(22, 22, 22) !important;
+    border: 1px solid yellow !important;
+    box-shadow: 0px 0px 12px yellow !important;
+}
+.card-content-list {
+    background-color: rgb(22, 22, 22);
+    border: 1px solid yellow !important;
+    box-shadow: 0px 0px 12px yellow !important;
+    border-radius: 6px;
+}

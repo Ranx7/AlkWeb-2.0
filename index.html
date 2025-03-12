@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Alkheim Hub</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-bg-custom fixed-top">
+        <div class="container">
+            <form class="d-flex align-items-center gap-2">
+                <img src="creeper.png" width="30" height="24" alt="Creeper">
+                <p class="navbar-brand-custom fw-bold fs-2 mb-0">Alkheim</p>
+            </form>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav fw-bold ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link me-2" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-2" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-2" href="#members">Members</a>
+                    </li>
+                </ul>
+                <form class="d-flex ms-auto gap-2">
+                    <div class="d-flex align-items-center gap-2 fw-bold py-2 p-3" style="color: white; background-color: rgb(45, 45, 45); border-radius: 10px; box-shadow: 0px 0px 8px rgb(133, 133, 133);">
+                        <p class="mb-0">Time:</p>
+                        <span id="real-time-clock" style="color: yellow !important;"></span>
+                    </div>
+                    <div class="d-flex align-items-center gap-2 fw-bold py-2 p-3" style="color: white; background-color: rgb(45, 45, 45); border-radius: 10px; box-shadow: 0px 0px 8px rgb(133, 133, 133);">
+                        <p class="mb-0">Visit Counts:</p>
+                        <span id="visit-count" style="color: yellow !important;"></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <section class="home-bg" id="home">
+        <div class="container mt-5 pt-5 py-5">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center order-md-1">
+                    <img src="minecraft-png.png" class="img-fluid">
+                </div>
+                <div class="col-12 col-lg-6 d-flex justify-content-center ms-auto py-5 order-md-0">
+                    <p class="text-md-start text-center">
+                        <span class="fs-0 fw-bold" style="color: white;">Welcome to <span style="color:yellow !important;">Alkheim</span> Website</span><br>
+                        <span class="fs-5" style="color: white;">
+                            Shadow Operatives is a dedicated crew that operates within the gaming community, primarily focusing on Minecraft.
+                            The team was founded by three skilled players known by their gamer tags: Viektor, Ranx, and Loner. Their mission is to maintain a fair and enjoyable gaming environment by taking a stand against toxic players who disrupt the experience for others.
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="background-color: rgb(30, 29, 29);" id="features">
+        <div class="container py-5">
+            <div class="row d-flex justify-content-center align-items-center pb-5">
+                <div class="col-auto d-flex justify-content-center">
+                    <p class="fs-0 fw-bold" style="color: white;">Features</p>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-12 col-lg-6 d-flex flex-column justify-content-center me-auto pb-5">
+                    <p>
+                        <span class="fw-bold fs-2" style="color: yellow;">Group Chats</span><br>
+                        <span style="color: white;" class="fs-5">
+                            Alkheim is a crew, as stated that was formed by Ranx on april 2022 on a server called, "Angelux Smp" and is still active up to this day.
+                            our crew has also been using "Messenger Group Chats" as a way of communication.
+                            but since 2023 Alkheim has also made a discord server
+                        </span>
+                    </p>
+                    <div class="card card-custom mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-sm-4">
+                                <img src="alkheim gc.jpg" class="img-fluid rounded-start" style="object-fit: cover; width: 100%; height: 100%;">
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="card-body" style="color: white;">
+                                    <h5 class="card-title fs-4">Alkheim GC</h5>
+                                    <p class="card-text">This is the Messenger Group Chat that alkheim is currently using</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-12 col-lg-6 d-flex flex-column justify-content-center ms-auto gap-4 pb-5">
+                        <p class="text-end mb-5">
+                            <span class="fw-bold fs-2" style="color: yellow;">Sub Teams</span><br>
+                            <span style="color: white;" class="fs-5">
+                                Alkheim is structured into three distinct sub-teams, each designed to fulfill a specific role within the group.
+                                These divisions are based on several key factors that ensure efficiency, balance, and purpose.
+                            </span>
+                        </p>
+                        <div class="card-content-list py-3 d-flex justify-content-center">
+                            <p class="fw-bold fs-4" style="color: white;">
+                                <img src="lapis.png" class="img-fluid" style="height: 50px;"> - The <span style="color: blue;">Genesis</span>
+                            </p>
+                        </div>
+                        <div class="card-content-list py-3 d-flex justify-content-center">
+                            <p class="fw-bold fs-4" style="color: white;">
+                                <img src="quartz.png" class="img-fluid" style="height: 50px;"> - The <span style="color: rgb(161, 161, 161);">Twilight</span>
+                            </p>
+                        </div>
+                        <div class="card-content-list py-3 d-flex justify-content-center">
+                            <p class="fw-bold fs-4" style="color: white;">
+                                <img src="redstone.png" class="img-fluid" style="height: 50px;"> - The <span style="color: red;">Red</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-12 col-lg-6 d-flex flex-column justify-content-center me-auto pb-5">
+                        <p>
+                            <span class="fw-bold fs-2" style="color: yellow;">Alkheim Student Unity Program</span><br>
+                            <span style="color: white;" class="fs-5">
+                                For this upcoming 3 Months Alkheim's Leader Ranx will launch
+                                a program to help students focus on their school grades more despite playing in different SMP(s)
+                            </span>
+                        </p>
+                        <div class="card card-custom mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-sm-4">
+                                    <img src="UNITY_SYMBOL.png" class="img-fluid rounded-start" style="object-fit: cover; width: 100%; height: 100%;">
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="card-body" style="color: white;">
+                                        <h5 class="card-title fs-4">Alkheim Student Unity Program</h5>
+                                        <p class="card-text">
+                                            Monday at 8AM - 9AM / 8PM - 9PM<br>
+                                            Tuesday at 8AM - 9AM / 8PM - 9PM<br>
+                                            Wednesday at 8AM - 9AM / 8PM - 9PM
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-12 col-lg-6 d-flex justify-content-center flex-column ms-auto gap-3">
+                        <p class="text-end">
+                            <span class="fw-bold fs-2" style="color: yellow;">Alkheim Dashboard</span><br>
+                            <span style="color: white;" class="fs-5">
+                                Ever since the beginning of Classes for 2023-2024, Alkheim will be strictly Monitored
+                                to prevent its inactivity leading to downfall
+                            </span>
+                        </p>
+                        <form class="d-flex gap-4 flex-wrap">
+                            <div class="card text-bg-warning mb-3" style="max-width: 18rem; box-shadow: 0px 0px 12px yellow;">
+                                <div class="card-header fw-bold">Group Chat</div>
+                                <div class="card-body">
+                                  <h5 class="card-title">30%</h5>
+                                </div>
+                            </div>
+                            <div class="card text-bg-secondary mb-3" style="max-width: 18rem; box-shadow: 0px 0px 12px gray;">
+                                <div class="card-header fw-bold">Discord</div>
+                                <div class="card-body">
+                                  <h5 class="card-title">20%</h5>
+                                </div>
+                            </div>
+                            <div class="card text-bg-danger mb-3" style="max-width: 18rem; box-shadow: 0px 0px 12px red;">
+                                <div class="card-header fw-bold">In Game</div>
+                                <div class="card-body">
+                                  <h5 class="card-title">20%</h5>
+                                </div>
+                            </div>
+                            <div class="card text-bg-primary mb-3" style="max-width: 18rem; box-shadow: 0px 0px 12px blue;">
+                                <div class="card-header fw-bold">Facebook</div>
+                                <div class="card-body">
+                                  <h5 class="card-title">20%</h5>
+                                </div>
+                            </div>
+                            <div class="card text-bg-info mb-3" style="max-width: 18rem; box-shadow: 0px 0px 12px lightblue;">
+                                <div class="card-header fw-bold">Youtube</div>
+                                <div class="card-body">
+                                  <h5 class="card-title">10%</h5>
+                                </div>
+                            </div>
+                        </form>
+                        <canvas id="alkheimChart" style="background-color: rgb(37, 35, 35);  box-shadow: 0px 0px 12px yellow !important; border-radius: 12px;"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="background-color: rgb(37, 36, 36);" id="members">
+        <div class="container-fluid py-5">
+            <div class="row d-flex justify-content-center align-items-center pb-5">
+                <div class="col-auto d-flex justify-content-center">
+                    <p class="fs-0 fw-bold" style="color: white;">Members</p>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-12 col-lg-8 col-md-6 d-flex justify-content-center flex-wrap gap-5">
+                    <div class="card" style="width: 18rem; background-color: rgb(22, 22, 22); border: 1px solid yellow !important; box-shadow: 0px 0px 8px yellow;">
+                        <img src="ace.PNG" class="card-img-top" style="width: 100%; height: 300px; object-fit: cover;">
+                        <div class="card-body">
+                          <h5 class="card-title" style="color: yellow;">Xian - AceofSpades</h5>
+                          <p class="card-text" style="color: white;">
+                            Aceofspades is one of the few people to join Alkheim at the 1st month it was created
+                            and at that time we were named as "Tempest" Ace focused on SPVP and building farms, that was the role he played in multiple smps
+                            although at times he helped Ranx in making plans
+                            he helped alkheim rid of multiple smps such as
+                            angelux smp, aurathy smp and cracksmp and was an honorable companion of Ranx the current leader of Alkheim. </p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem; background-color: rgb(22, 22, 22); border: 1px solid yellow !important; box-shadow: 0px 0px 8px yellow;">
+                        <img src="Karl.PNG" class="card-img-top" style="width: 100%; height: 300px; object-fit: cover;">
+                        <div class="card-body">
+                          <h5 class="card-title" style="color: yellow;">Karl Tanangonan - Bxggs</h5>
+                          <p class="card-text" style="color: white;">
+                            Karl joined alkheim, while they were operating in a server called Sanguine Rebels Smp
+                            he sided with alkheim during its battle against a team called Entity
+                            karl's role played a huge part in taking down a few smps. </p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem; background-color: rgb(22, 22, 22); border: 1px solid yellow !important; box-shadow: 0px 0px 8px yellow;">
+                        <img src="xien.PNG" class="card-img-top" style="width: 100%; height: 300px; object-fit: cover;">
+                        <div class="card-body">
+                          <h5 class="card-title" style="color: yellow;">Angela Xien - ComicXien</h5>
+                          <p class="card-text" style="color: white;">
+                            for more than a year, she witnessed the very creation of alkheim, her, ace and the others from angeluxsmp
+                            are what i like to call the The Tempest Era because at that time that they joined alkheim
+                            it was still called Tempest, Xien took part in a lot of operations even including The Sanguine Rebels Smp
+                            xien was originally from the team called Merchants. </p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem; background-color: rgb(22, 22, 22); border: 1px solid yellow !important; box-shadow: 0px 0px 8px yellow;">
+                        <img src="john.PNG" class="card-img-top" style="width: 100%; height: 300px; object-fit: cover;">
+                        <div class="card-body">
+                          <h5 class="card-title" style="color: yellow;">John Joseph - SenpaiO*en</h5>
+                          <p class="card-text" style="color: white;">
+                            John is kind of new to alkheim but, he actually was a member a long time ago
+                            an inactive one, since he mostly played roblox, but earlier on, he started to join our sessions
+                            he helped us operate on Zonecraft recently, and TakoyakiiSmp, which was both succesful.</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem; background-color: rgb(22, 22, 22); border: 1px solid yellow !important; box-shadow: 0px 0px 8px yellow;">
+                        <img src="mark.PNG" class="card-img-top" style="width: 100%; height: 300px; object-fit: cover;">
+                        <div class="card-body">
+                          <h5 class="card-title" style="color: yellow;">Mark - senpaimark</h5>
+                          <p class="card-text" style="color: white;">
+                            Mark came from the server "Sanguine Rebels Smp"
+                            mark specializes in CPVP and is a part of many pvp clans
+                            Mark 1st joined alkheim as a newbie, he helped build many sugarcane farms in SR smp, he still joins alkheim's operations
+                            till this day, he also participated in TakoyakiiSMP</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem; background-color: rgb(22, 22, 22); border: 1px solid yellow !important; box-shadow: 0px 0px 8px yellow;">
+                        <img src="jewel.PNG" class="card-img-top" style="width: 100%; height: 300px; object-fit: cover;">
+                        <div class="card-body">
+                          <h5 class="card-title" style="color: yellow;">Jewel - NOTR3NZ</h5>
+                          <p class="card-text" style="color: white;">
+                            Jewel was originally The Owner of Crack SMP
+                            after Alkheim operated on Crack SMP, Jewel was persuaded into joining alkheim and, became
+                            very active, jewel also took with him many Crack SMP members therefore adding them up to Alkheim
+                            jewel was often the SMP FINDER of alkheim.</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem; background-color: rgb(22, 22, 22); border: 1px solid yellow !important; box-shadow: 0px 0px 8px yellow;">
+                        <img src="dayeeeter.jpg" class="card-img-top" style="width: 100%; height: 300px; object-fit: cover;">
+                        <div class="card-body">
+                          <h5 class="card-title" style="color: yellow;">Marc - DAYEEETER</h5>
+                          <p class="card-text" style="color: white;">
+                            DAYEEETER: Nation: USSR (Supreme leader) Abilities/skill: Strategic planning (active), attraction (passive),
+                            RED WATER (passive on riptide), lavacast engineering (special) Gender: Attack Helicopter (Female) A silly little
+                            girl well known by Alkheim. Fun to be a friend with but terrible (skill issue)
+                            when you fight against her. She is a strategist in Alkheim alongside with Ranx. She had a long terrible past...</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem; background-color: rgb(22, 22, 22); border: 1px solid yellow !important; box-shadow: 0px 0px 8px yellow;">
+                        <img src="carl.jpg" class="card-img-top" style="width: 100%; height: 300px; object-fit: cover;">
+                        <div class="card-body">
+                          <h5 class="card-title" style="color: yellow;">Janaiah - Carl</h5>
+                          <p class="card-text" style="color: white;">
+                            The legend, carl is carl is there more to say?</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem; background-color: rgb(22, 22, 22); border: 1px solid yellow !important; box-shadow: 0px 0px 8px yellow;">
+                        <img src="shammy.PNG" class="card-img-top" style="width: 100%; height: 300px; object-fit: cover;">
+                        <div class="card-body">
+                          <h5 class="card-title" style="color: yellow;">Catalleya Sham - Shammy</h5>
+                          <p class="card-text" style="color: white;">
+                            Shammy is an inactive member of alkheim, but everytime
+                            she joins an operation, she sure makes alot of difference
+                            she was originally the owner of Clock SMP
+                            "CSMP", which almost had a similar name with Crack SMP, "CSMP"
+                            shammy is good at grinding and building small structures, she also has experience with aternos
+                            she knows how some plugins work giving her the role to help us understand our targets even better.</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem; background-color: rgb(22, 22, 22); border: 1px solid yellow !important; box-shadow: 0px 0px 8px yellow;">
+                        <img src="crypto.jpg" class="card-img-top" style="width: 100%; height: 300px; object-fit: cover;">
+                        <div class="card-body">
+                          <h5 class="card-title" style="color: yellow;">Michael - Crypto/Hollow</h5>
+                          <p class="card-text" style="color: white;">
+                            Former Enemy crypto was a former enemy of alkheim
+                            during the occupation of Sanguine Rebels SMP and is one of the biggest
+                            competitor of that time, and is somewhat Ranx's rival since they annoyed each other multiple times
+                            Crypto specializes on PVP and finding exploits, hollow will find any possible exploitable feature
+                            in the server's plugins, in order to always come out on top
+                            he is also the leader of many groups although most of them died out
+                            PIERCED, I.M.P etc...</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem; background-color: rgb(22, 22, 22); border: 1px solid yellow !important; box-shadow: 0px 0px 8px yellow;">
+                        <img src="promaster.PNG" class="card-img-top" style="width: 100%; height: 300px; object-fit: cover;">
+                        <div class="card-body">
+                          <h5 class="card-title" style="color: yellow;">Dan - Promaster</h5>
+                          <p class="card-text" style="color: white;">
+                            PromasterYTJava: PromasterYTJava Is The Great Owner Of Procraft SMP And A Small YouTube Content
+                            Creator With Over 370 Subscribers, Ranx7 Discovered Him Coincidentially In School, PromasterYTJava
+                            Invited Ranx7 To Procraft SMP, What He Didn't Know, This Will Be
+                            Another Big Enemy He Will Be Facing, But After The Great Procraft War,
+                            PromasterYTJava And Ranx7 Are Still Good Friends, Hence Procraft And Alkheim Is Still Collaborating Till To This Day</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem; background-color: rgb(22, 22, 22); border: 1px solid yellow !important; box-shadow: 0px 0px 8px yellow;">
+                        <img src="Caleb.PNG" class="card-img-top" style="width: 100%; height: 300px; object-fit: cover;">
+                        <div class="card-body">
+                          <h5 class="card-title" style="color: yellow;">Caleb - PainSaga</h5>
+                          <p class="card-text" style="color: white;">
+                            Caleb is a friend of John Joseph, also known as SenpaiOten, within their Minecraft community.
+                            he did introduced John Joseph to the Alkheim Minecraft team, where they both play.
+                            he's also a part of the Sanguine Rebeles SMP within the team, and it was through Caleb's invitation that John Joseph joined them.
+                            They enjoy playing together and supporting each other within the Minecraft server.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="py-3 text-center d-flex justify-content-center flex-column gap-3 pt-5 pb-5" style="background: linear-gradient(to left, rgb(0, 0, 0), rgb(28, 28, 28)); color: white;">
+        <span class="fs-5 lead">Follow me in my social media platforms</span>
+        <form class="d-flex justify-content-center align-items-center gap-5">
+            <p class="fs-5"><img src="395_Youtube_logo-1024.webp" class="img-fluid" style="width: 30px;"> Ranx</p>
+            <p class="fs-5"><img src="social-facebook-square2-512.webp" class="img-fluid" style="width: 30px;"> Randy Molina</p>
+        </form>
+        <span class="fs-5 fw-bold">© 2025 ArnDev. All Rights Reserved.</span>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        const ctx = document.getElementById('alkheimChart');
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Group Chat', 'Discord', 'In Game', 'Facebook', 'Youtube'],
+                datasets: [{
+                    label: 'Chart',
+                    data: [30, 20, 20, 20, 10],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            document.getElementById('real-time-clock').innerText = `${hours}:${minutes}:${seconds}`;
+        }
+        setInterval(updateClock, 1000);
+        updateClock();
+    </script>
+    <script>
+        let visitCount = localStorage.getItem("visitCount") || 0;
+        visitCount++;
+        localStorage.setItem("visitCount", visitCount);
+        document.addEventListener("DOMContentLoaded", () => {
+            document.getElementById("visit-count").innerText = visitCount;
+        });
+    </script>
+</body>
+</html>
