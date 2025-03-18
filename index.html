@@ -389,12 +389,24 @@
         updateClock();
     </script>
     <script>
-        let visitCount = localStorage.getItem("visitCount") || 0;
-        visitCount++;
-        localStorage.setItem("visitCount", visitCount);
+        const apiKey = "TloDiJLE6fIuVJmw5X/ElQ==2dSq2WYfq3YWyfVx"; 
+        const counterName = "my_visitor_counter"; 
+        
         document.addEventListener("DOMContentLoaded", () => {
-            document.getElementById("visit-count").innerText = visitCount;
+            fetch(`https://api.api-ninjas.com/v1/counter?id=${counterName}&hit=true`, {
+                headers: { "X-Api-Key": apiKey }
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("visit-count").innerText = data.value;
+            })
+            .catch(error => {
+                console.error("Error fetching visit count:", error);
+                document.getElementById("visit-count").innerText = "Error";
+            });
         });
+
+ 
     </script>
 </body>
 </html>
